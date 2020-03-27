@@ -1,0 +1,12 @@
+{
+  "properties": [
+    {
+      "name": "dynamodb.endpoint-override",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "dynamodb.region",
+      "type": "java.lang.String"
+    }
+  ]
+}
