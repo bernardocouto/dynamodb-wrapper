@@ -1,2 +1,1 @@
-# dynamodb-wrapper
-DynamoDB Wrapper
+# DynamoDB Wrapper
