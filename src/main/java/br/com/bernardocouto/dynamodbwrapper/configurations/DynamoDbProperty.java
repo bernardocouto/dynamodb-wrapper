@@ -9,6 +9,8 @@ public class DynamoDbProperty {
 
     private String region;
 
+    private ConverterProperties converterProperties = new ConverterProperties();
+
     public String getEndpointOverride() {
         return endpointOverride;
     }
@@ -23,6 +25,32 @@ public class DynamoDbProperty {
 
     public void setRegion(String region) {
         this.region = region;
+    }
+
+    public ConverterProperties getConverterProperties() {
+        return converterProperties;
+    }
+
+    public void setConverterProperties(ConverterProperties converterProperties) {
+        this.converterProperties = converterProperties;
+    }
+
+    protected static class ConverterProperties {
+
+        private String propertyNamingStrategy = "SNAKE_CASE";
+
+        public ConverterProperties() {
+            super();
+        }
+
+        public String getPropertyNamingStrategy() {
+            return propertyNamingStrategy;
+        }
+
+        public void setPropertyNamingStrategy(String propertyNamingStrategy) {
+            this.propertyNamingStrategy = propertyNamingStrategy;
+        }
+
     }
 
 }
