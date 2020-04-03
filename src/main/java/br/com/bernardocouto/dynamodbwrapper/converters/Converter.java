@@ -11,7 +11,7 @@ public interface Converter {
 
     <T> Map<String, AttributeValue> mapToType(T type);
 
-    <T> T mapToTypeList(Map<String, AttributeValue> map, Class<T> type);
+    <T> T mapToType(Map<String, AttributeValue> map, Class<T> type);
 
     String translateFieldName(String fieldName);
 
