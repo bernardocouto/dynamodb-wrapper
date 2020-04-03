@@ -6,7 +6,6 @@ import br.com.bernardocouto.dynamodbwrapper.exceptions.OperationException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
